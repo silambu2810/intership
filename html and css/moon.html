@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moon Animation</title>
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    nav{
+        width: 100%;
+        background: #000000;
+        padding: 30px 30px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    nav .logo{
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 30px;
+        letter-spacing: 1px;
+        
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 40px;
+        padding: 0;
+        width: 300px;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover{
+        color: #5c0bc5;
+        box-shadow: 0 0 20px #0ff,0 0 40px rgb(123, 31, 209);
+        border:transparent 2px #fff;
+        border-radius: 20px;
+        
+    }
+    nav .logo:hover{
+        color: #5c0bc5;
+        box-shadow: 0 0 #0ff,0 0 40px rgb(123, 31, 209);
+        border-radius: 20px;
+        border: solid 2px #fff;
+        
+        
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .moon {
+      background: black;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+    }
+  
+    .moon::before {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      z-index: -1;
+      animation: move 3.2s linear infinite alternate;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(-20px);
+        filter: blur(0px);
+      }
+      100% {
+        transform: translateX(60px);
+        filter: blur(6px);
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav style="background-color: #000000; height: 100px; ">
+        <div class="logo"><h1>Moon phase</h1></div>
+        <ul>
+            <li><a href="form.html">Home</a></li>
+            <li><a href="example.html">Phases</a></li>
+            <li><a href="transitioncss.html">About</a></li>
+            <li><a href="cssbox.html" >Contact</a></li><hr>
+        </ul>
+    </nav>
+
+    <div class="container " style=" position: relative; height: 400px; width: 100%; ">
+        <div class="moon"></div>
+
+   
+<p style="color: white; position: absolute; top: 110px; left: 20; ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro sint recusandae, repudiandae velit quia qui fugit quas suscipit et at ut quidem in est deleniti ipsum, quasi ipsa rerum aspernatur?</p>
+   </div>
+
+</body>
+</html>

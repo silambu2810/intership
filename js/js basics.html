@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input::placeholder{
+            text-shadow: 10px;
+        }
+    </style>
+</head>
+<body class="flex justify-center">
+    <section class="bg-gray-900 w-[80%] p-4 ">
+        <h3 class="text-2xl text-pink-500 font-bold">1.conditions</h3>
+            <p class="w-[90%] p-2 bg-gray-700 text-white"><span class="font-bold">Lorem</span> ipsum dolor sit amet, <span class="bg-slate-400/50 rounded-md p-0.5">consectetur </span>adipisicing elit. Assumenda tempora doloremque cumque animi reiciendis qui porro corrupti, dolore necessitatibus velit illo, commodi dolorem dolor. Aut dicta voluptatibus ullam pariatur aspernatur?</p>
+
+            <input type="number" placeholder="Enter your Name" max="150" min="0" class="w-[20%] m-2 h-8 p-2">
+            <button class="bg-pink-400 h-10 p-2"><b>😎click me</b></button>
+            <p id="result" class="text-white font-bold text-2xl pl-4">Test</p>
+        
+    </section>
+    <script>
+        const btn = document.getElementById('btn');
+        const input = document.getElementsByClassName('input');
+        const result = document.querySelector('#result');
+
+        function checkAge(){
+            const age=input[0]
+        }
+    </script>
+    
+</body>
+</html>
